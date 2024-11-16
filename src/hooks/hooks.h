@@ -10,7 +10,7 @@ namespace Hooks {
 		static void Install() {
 			auto& trampoline = SKSE::GetTrampoline();
 
-			REL::Relocation<std::uintptr_t> target{ REL::ID(34154), 0xDB };
+			REL::Relocation<std::uintptr_t> target{ REL::ID(33373), 0xDB };
 			_attachArt = trampoline.write_call<5>(target.address(), &AttachArt);
 		}
 
